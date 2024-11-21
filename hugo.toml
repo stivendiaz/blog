@@ -1,0 +1,76 @@
+baseURL = "https://stivendiaz.dev"
+languageCode = 'en-us'
+title = "stivens's blog"
+theme = "github-style"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+
+[params]
+  author = "stivendiaz"
+  description = 'Show me the code.'
+  github = "stivendiaz"
+  linkedin = "stivendiaz"
+  email = "stivendiazagudelo@gmail.com"
+  url = "https://stivendiaz.dev"
+  keywords = "blog, google analytics"
+  rss = true
+  lastmod = true
+  userStatusEmoji = "🚀"
+  favicon = "/images/github.png"
+  avatar = "/images/profile.jpeg"
+  headerIcon = "/images/profile.jpeg"
+  location = "Colombia"
+  enableGitalk = true
+  enableSearch = true
+
+  [params.gitalk]
+    clientID = "Ov23liL8iGDmub2sRjMJ"
+    clientSecret = "<client-secret>"
+    repo = "https://github.com/stivendiaz/blog"
+    owner = "stivendiaz"
+    admin = "stivendiaz"
+    id = "location.pathname"
+    labels = "gitalk"
+    perPage = 15
+    pagerDirection = "last"
+    createIssueManually = true
+    distractionFreeMode = false
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+
+[services]
+  [services.googleAnalytics]
+    ID = "UA-123456-789"
+
+[outputs]
+  home = ["html", "json"]
+
+[outputFormats.json]
+  mediaType = "application/json"
+  baseName = "index"
+  isPlainText = false
+
+[languages]
+  [languages.es]
+    contentDir = 'content/es'
+    disabled = false
+    languageCode = 'es-ES'
+    languageDirection = 'ltr'
+    languageName = 'Español'
+    title = 'Blog de stivendiaz'
+    weight = 2
+    [languages.es.params]
+      subtitle = 'Referenz, Tutorials und Erklärungen'
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'Project Documentation'
+    weight = 1
+    [languages.en.params]
+      subtitle = 'Reference, Tutorials, and Explanations'

@@ -1,0 +1,19 @@
+# Hugo files
+/public/
+/resources/_gen/
+/node_modules/
+/.DS_Store
+Thumbs.db
+
+# Hugo configuration files
+config.toml
+config.yaml
+config.json
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
