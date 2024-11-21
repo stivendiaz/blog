@@ -1,4 +1,4 @@
-baseURL = "https://stivendiaz.dev"
+baseURL = "https://stivendiaz.github.io/blog/"
 languageCode = 'en-us'
 title = "stivens's blog"
 theme = "github-style"
@@ -27,7 +27,7 @@ defaultContentLanguageInSubdir = true
 
   [params.gitalk]
     clientID = "Ov23liL8iGDmub2sRjMJ"
-    clientSecret = "<client-secret>"
+    clientSecret = "77a9e377499a739a776dece8cfcbdd4b74549214"
     repo = "https://github.com/stivendiaz/blog"
     owner = "stivendiaz"
     admin = "stivendiaz"
